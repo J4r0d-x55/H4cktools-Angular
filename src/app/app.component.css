@@ -1,0 +1,136 @@
+/* Général */
+* {
+  box-sizing: border-box;
+  font-family: "Share Tech Mono", monospace;
+}
+
+/* Navbar */
+
+.nav-link {
+  color: whitesmoke;
+  margin-left: 30px;
+}
+.navbar-brand {
+  color: whitesmoke;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  background: #111;
+
+  height: auto;
+
+  width: 100%;
+
+  padding-top: 40px;
+
+  color: whitesmoke;
+}
+.footer-title {
+  font-family: "Orbitron", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+
+  font-weight: 500;
+
+  text-transform: capitalize;
+  text-align: center;
+
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+
+  margin: 10px auto;
+
+  line-height: 28px;
+
+  font-size: 14px;
+
+  color: #cacdd2;
+}
+
+.socials {
+  list-style: none;
+  text-align: center;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.socials a img {
+  font-size: 1.4rem;
+
+  width: 20px;
+
+  transition: color 0.4s ease;
+}
+
+.socials a img:hover {
+  scale: 1.2;
+}
+
+.footer-bottom {
+  background: #000;
+
+  width: 100vw;
+
+  padding: 20px;
+
+  padding-bottom: 40px;
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+
+  font-size: 14px;
+
+  word-spacing: 2px;
+}
+
+.footer-bottom p a {
+  color: #ccc;
+
+  font-size: 16px;
+
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .footer-bottom p {
+    float: none;
+  }
+}
