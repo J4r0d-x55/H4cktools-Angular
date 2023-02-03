@@ -1,0 +1,73 @@
+.title-item-home-nikto {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  color: whitesmoke;
+  margin-top: 120px;
+  margin-left: 25px;
+}
+
+.flex-item-home-nikto {
+  border: solid 1px rgb(94, 94, 94);
+  margin: 70px 35px 35px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(25, 25, 25);
+  margin-right: 25px;
+}
+.nikto-form {
+  border: solid 1px rgb(94, 94, 94);
+  margin-left: 7%;
+  padding: 40px;
+  background-color: black;
+  height: 280px;
+  width: 550px;
+  margin-top: 40px;
+}
+
+.flex-item-nikto-response {
+  border: solid 1px rgb(94, 94, 94);
+  padding: 40px;
+  margin-right: 7%;
+  background-color: black;
+  height: 280px;
+  width: 700px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.flex-commands-nikto {
+  display: flex;
+  justify-content: center;
+}
+.nikto-commands-no {
+  width: 1050px;
+  border: solid 1px rgb(94, 94, 94);
+  height: 404px;
+  background-color: black;
+  margin-bottom: 30px;
+}
+.title-tuning-nikto {
+  text-align: center;
+  font-size: 2em;
+  color: whitesmoke;
+  font-family: "Share Tech Mono", monospace;
+  margin-top: 15px;
+}
+.subtitle-tuning {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.5em;
+  background-color: rgb(11, 11, 11);
+}
+.bloc-home-wall-nikto {
+  border: 1px solid rgb(182, 0, 0);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: rgb(11, 11, 11);
+  height: 920px;
+}

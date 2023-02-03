@@ -1,0 +1,141 @@
+* {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.title-item-home-nmap {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  color: whitesmoke;
+  margin-top: 120px;
+  margin-left: 25px;
+}
+.flex-item-home {
+  border: solid 1px rgb(94, 94, 94);
+  margin: 70px 35px 35px;
+  height: 280px;
+  background-color: rgb(25, 25, 25);
+}
+.flex-item-home-nmap {
+  border: solid 1px rgb(94, 94, 94);
+  margin: 70px 35px 35px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(25, 25, 25);
+}
+
+.nmap-form {
+  border: solid 1px rgb(94, 94, 94);
+  margin-left: 7%;
+  padding: 40px;
+  background-color: black;
+  height: 280px;
+  width: 550px;
+  margin-top: 40px;
+}
+
+.flex-item-nmap-response {
+  border: solid 1px rgb(94, 94, 94);
+  padding: 40px;
+  margin-right: 7%;
+  background-color: black;
+  height: 280px;
+  width: 700px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.scan-nmap {
+  color: rgb(0, 0, 0);
+  background-color: #cccccc;
+  padding: 12px 16px;
+  text-align: left;
+}
+.select-scan {
+  color: whitesmoke;
+}
+.code-wrapper {
+  position: relative;
+  width: 40rem;
+  height: 130px;
+  margin-top: -150px;
+  display: block;
+  text-align: center;
+}
+.code-wrapper pre {
+  background-color: #000000;
+  color: white;
+  padding: 3px 10px;
+  height: 140px;
+  overflow: hidden;
+}
+#copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 7px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  opacity: 0.8;
+}
+#copy-button:hover {
+  background-color: rgb(182, 0, 0);
+  color: #fff;
+}
+#save-button {
+  position: absolute;
+  top: 55px;
+  right: 8px;
+  padding: 7px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  opacity: 0.8;
+}
+#save-button:hover {
+  background-color: rgb(182, 0, 0);
+  color: #fff;
+}
+.code-wrapper:hover #copy-button {
+  opacity: 1;
+}
+.flex-code-nmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+#code {
+  display: flex;
+  justify-content: center;
+}
+textarea {
+  width: 800px;
+  height: 300px;
+  background-color: #000000;
+  font-family: "Share Tech Mono", monospace;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+@media (max-width: 850px) {
+  .code-wrapper {
+    width: 5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  textarea {
+    width: 15rem;
+  }
+}

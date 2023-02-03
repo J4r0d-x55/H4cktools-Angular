@@ -1,0 +1,74 @@
+<div class="flex-item-home-nmap">
+  <h2 class="title-item-home-nmap">Nmap Generator</h2>
+  <form
+    class="nmap-form"
+    #basicForm="ngForm"
+    (submit)="getData(basicForm.value)"
+  >
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-control"
+        ngModel
+        placeholder="Enter the target Ip"
+        name="host"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-control"
+        ngModel
+        placeholder="Enter the target port"
+        name="port"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label for="scan-nmap" class="select-scan">Select your scan :</label>
+      </div>
+      <select id="scan-nmap" [(ngModel)]="selectedScan" name="scan-nmap">
+        <option value="detect-service">Detect service</option>
+        <option value="all-ports">All ports</option>
+        <option value="top-ports">Top ports</option>
+        <option value="file-scan">File scan</option>
+        <option value="CVE-detection">CVE detection</option>
+        <option value="tcp">TCP port</option>
+        <option value="udp">UDP port</option>
+        <option value="dos">DOS attack</option>
+        <option value="brute-force-wp">Wordpress brute force</option>
+        <option value="brute-force-sql">SQL brute force</option>
+        <option value="brute-force-ftp">FTP brute force</option>
+        <option value="malware-detection">Malware detection</option>
+        <option value="google-detection">Google detection</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-secondary">Generate</button>
+  </form>
+
+  <!-- Response -->
+  <div class="flex-item-nmap-response">
+    <section class="flex-code-nmap">
+      <div *ngIf="selectedScan === 'detect-service'" class="card-body">
+        <div *ngIf="submitted" class="content-code">
+          <div class="code-wrapper">
+            <pre>
+            <code id="code" >
+              <textarea rows="14" cols="40" #inputTarget #textarea>
+nmap {{ userData.host }} {{ userData.port }} testet 
+test testet ttesttetst eybnfpeok;fêl kfmlr;,flr;grk; 
+ml,fmlekfpml,fml,gl,fdgmlk,fglk
+              </textarea>
+            </code>
+            </pre>
+            <button [ngxClipboard]="inputTarget" id="copy-button">Copy</button>
+            <button (click)="saveTextareaContent()" id="save-button">
+              Download
+            </button>
+            <app-ping></app-ping>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
